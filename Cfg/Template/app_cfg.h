@@ -95,5 +95,7 @@
 *                                             MODULE END
 *********************************************************************************************************
 */
+#define CPU_CFG_KA_IPL_BOUNDARY 4
+#define CPU_CFG_NVIC_PRIO_BITS 4
 
 #endif                                                          /* End of module include.              */

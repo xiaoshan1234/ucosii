@@ -510,7 +510,7 @@ OS_STK  *OSTaskStkInit (void    (*task)(void *p_arg),
 #if (OS_CPU_ARM_FP_EN > 0u)
     *(--p_stk) = (OS_STK)0xFFFFFFEDuL;                          /* R14: EXEC_RETURN; See Note 5                         */
 #else
-    *(--p_stk) = (OS_STK)0xFFFFFFFDuL;                          /* R14: EXEC_RETURN; See Note 5                         */
+    // *(--p_stk) = (OS_STK)0xFFFFFFFDuL;                          /* R14: EXEC_RETURN; See Note 5                         */
 #endif
                                                                 /* Remaining registers saved on process stack           */
     *(--p_stk) = (OS_STK)0x11111111uL;                          /* R11                                                  */
